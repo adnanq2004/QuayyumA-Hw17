@@ -46,10 +46,10 @@ void remove_thing() {
 
 int main(int argc, char * argv) {
   // printf("are you creating or removing?\n");
-  if (argv[0] == 'c') {
+  if (!strcmp(argv[1], "control")) {
     create_thing();
   }
-  else if (argv[0] == 'r') {
+  else if (!strcmp(argv[1], "remove")) {
     remove_thing();
   }
 
